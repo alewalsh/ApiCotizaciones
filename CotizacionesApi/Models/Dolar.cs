@@ -1,8 +1,9 @@
 ﻿namespace CotizacionesApi.Models
 {
-    public class Dolar : Cotizacion
+    public class Dolar : Moneda
     {
-        public override string Moneda => "Dolar";
+        public override string Nombre => "Dolar";
+        public override string Abreviatura => "USD";
     }
 }
 

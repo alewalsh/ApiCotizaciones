@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace CotizacionesApi.Models
 {
-    public class Euro : Cotizacion
+    public class Euro : Moneda
     {
-        public override string Moneda => "Euro";
+        public override string Nombre => "Euro";
+        public override string Abreviatura => "EUR";
     }
 }

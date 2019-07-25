@@ -8,6 +8,6 @@ namespace CotizacionesApi.Services.Interfaces
 {
     public interface ICotizacionService
     {
-        Cotizacion GetCotizacion(Cotizacion moneda);
+        Cotizacion GetCotizacion(Moneda moneda);
     }
 }

@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace CotizacionesApi.Models
 {
-    public class Real : Moneda
+    public abstract class Moneda
     {
-        public override string Nombre => "Real";
-        public override string Abreviatura => "REA";
+        public virtual string Nombre { get; set; }
+        public virtual string Abreviatura { get; set; }
     }
 }

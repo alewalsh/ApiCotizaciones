@@ -9,11 +9,11 @@ namespace CotizacionesApi.Services
 {
     public class CotizacionService : ICotizacionService
     {
-        public Cotizacion GetCotizacion(Cotizacion cotizacion)
+        public Cotizacion GetCotizacion(Moneda moneda)
         {
             return new Cotizacion
             {
-               Moneda = cotizacion.Moneda,
+               Moneda = moneda.Nombre,
                Precio = 32.8
             };
         }
