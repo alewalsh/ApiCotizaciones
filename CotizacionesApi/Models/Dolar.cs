@@ -3,7 +3,8 @@
     public class Dolar : Moneda
     {
         public override string Nombre => "Dolar";
-        public override string Abreviatura => "USD";
+        public override string CodigoISO4217 => "USD";
+        public override CotizacionResponse Response => new DolarResponse();
     }
 }
 

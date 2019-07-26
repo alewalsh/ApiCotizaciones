@@ -8,6 +8,7 @@ namespace CotizacionesApi.Models
     public class Euro : Moneda
     {
         public override string Nombre => "Euro";
-        public override string Abreviatura => "EUR";
+        public override string CodigoISO4217 => "EUR";
+        public override CotizacionResponse Response => new EuroResponse();
     }
 }

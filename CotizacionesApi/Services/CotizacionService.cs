@@ -1,4 +1,5 @@
-﻿using CotizacionesApi.Models;
+﻿using CotizacionesApi.Helpers;
+using CotizacionesApi.Models;
 using CotizacionesApi.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,13 +10,10 @@ namespace CotizacionesApi.Services
 {
     public class CotizacionService : ICotizacionService
     {
-        public Cotizacion GetCotizacion(Moneda moneda)
+        public async Task<Cotizacion> GetCotizacionAsync(Moneda moneda)
         {
-            return new Cotizacion
-            {
-               Moneda = moneda.Nombre,
-               Precio = 32.8
-            };
+            ApiHandler api = new ApiHandler();
+            return await api.Get(moneda);
         }
     }
 }
